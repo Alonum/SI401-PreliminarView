@@ -52,5 +52,5 @@ Versão preliminar de um site para a disciplina SI401. Atividade de Fixação 20
 
 ## Links Úteis
 
-- [**CSS Cheat Sheet**]https://htmlcheatsheet.com/css/
-- [**HTML Cheat Sheet**]https://htmlcheatsheet.com/
+- [**CSS Cheat Sheet**](https://htmlcheatsheet.com/css/)
+- [**HTML Cheat Sheet**](https://htmlcheatsheet.com/)
