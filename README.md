@@ -15,3 +15,37 @@ Versão preliminar de um site para a disciplina SI401. Atividade de Fixação 20
 
 * Esta atividade deve ser realizada individualmente.
 * Prazo: 10/09/2024
+
+## Progresso
+
+-[] **Ementa:** Elaboração de páginas web. Linguagens de marcação. Folhas de estilo. Javascript. Uso de linguagens de programação para geração dinâmica de páginas web. Uso de servidores web para armazenamento de sites. Atividades práticas de implementação de sistemas baseados nessas linguagens.
+
+-[] **Objetivo:** Colocar em perspectiva a programação para Web. Capacitar o aluno a compreender as principais linguagens de marcação e estilo. Capacitar o aluno a compreender e desenvolver scripts para execução em navegadores. Capacitar o aluno a compreender e desenvolver scripts para execução em servidores web.
+
+-[] **Tópicos:**
+  -[]	Introdução
+    -[]	Imagens
+	-[]	Referências
+	-[]	Materiais Externos
+  -[]	HTML
+    -[]	Imagens
+	-[]	Referências
+	-[]	Materiais Externos
+  -[]	CSS
+    -[]	Imagens
+	-[]	Referências
+	-[]	Materiais Externos
+  -[]	Front-End com JavaScript
+    -[]	Imagens
+	-[]	Referências
+	-[]	Materiais Externos
+  -[]	Back-End com PHP e AJAX
+    -[]	Imagens
+	-[]	Referências
+	-[]	Materiais Externos
+  -[]	Tópico Complementar: Acessibilidade na Web
+	-[]	Materiais Externos
+
+-[] **Layout**
+
+-[] **Padrão W3C**
