@@ -35,10 +35,10 @@
 
 /*funny stuff*/
 .baphomet{
-    background-image: url('notimg/x2.png');
-    background-size: 10vw;
-    /*background-repeat: no-repeat;*/
-    background-position: center top 500px;
+    background-image: url('notimg/x1.png');
+    background-size: 50vw;
+    background-repeat: no-repeat;
+    background-position: center top 10px;
     right: 50px;
     width: 150px;
     height: 300px;
