@@ -30,6 +30,8 @@
 
     /*funny stuff*/
     background-image: url('notimg/x2.png');
+    background-repeat: no-repeat;
+    background-position: start;
     background-size: 100px;
 }
 
