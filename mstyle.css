@@ -14,10 +14,10 @@
 
     text-shadow: 0 0 5px #FFF, 0 0 10px rgb(5, 0, 0), 0 0 15px #FFF, 6px 1px 3px #FC511D, -12px -12px 20px rgba(252,0,0,0.52);
     color: #FFFFFF;
-    background: #232323;
+    background: #130909;
 
     font-family: Impact, Charcoal, sans-serif;
-    font-size: 400%;
+    font-size: 3vw;
     letter-spacing: 3.6px;
     word-spacing: 5.4px;    
     text-decoration: none solid rgb(68, 68, 68);
@@ -25,4 +25,20 @@
     font-variant: normal;
     text-transform: uppercase;
     text-align: center;
+
+
+    /*funny stuff*/
+    background-image: url('notimg/x2.png');
+    background-size: 100px;
 }
+
+/*funny stuff*/
+.baphomet{
+    background-image: url('notimg/x2.png');
+    background-size: 20px;
+    width: 150px;
+    height: 300px;
+    background-color:black
+}
+
+
