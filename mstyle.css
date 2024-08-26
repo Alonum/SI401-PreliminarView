@@ -27,17 +27,14 @@
     text-transform: uppercase;
     text-align: center;
 
-
-    /*funny stuff*/
-    background-image: url('notimg/x2.png');
+    background-image: url('img/wip.png');
     background-repeat: no-repeat;
     background-position: start;
     background-size: 5vw;
 }
 
-/*funny stuff*/
-.baphomet{
-    background-image: url('notimg/x1.png');
+.wipimage{
+    background-image: url('img/wip.png');
     background-size: 50vw;
     background-repeat: no-repeat;
     background-position: center top 10px;
