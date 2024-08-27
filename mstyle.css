@@ -3,7 +3,7 @@
     border: 0.5vw inset rgba(252,81,29,0.88);
     border-bottom: 0px;
 
-    position:fixed;
+    position: fixed;
     margin:0;
 
     top:0;
@@ -35,7 +35,7 @@
     background-size: 5vw;
 }
 
-.topicsHeader{
+.topicsBar{
     border: 0.25vw inset rgba(252,81,29,0.88);
     
     position:fixed;
@@ -67,6 +67,20 @@
     background-repeat: no-repeat;
     background-position: start;
     background-size: 2.5vw;
+}
+
+a
+{
+    text-shadow: 0 0 5px #FFF, 0 0 10px rgb(5, 0, 0), 0 0 15px #FFF, 6px 1px 3px #FC511D, -12px -12px 20px rgba(252,0,0,0.52);
+    color: #FFFFFF;
+    background: #130909;
+    text-decoration: none solid rgb(68, 68, 68);
+}
+
+a:hover
+{
+    color: black;
+    text-shadow: 0 0 60px red   , 0 0 10px rgb(5, 0, 0), 0 0 15px #FFF, 6px 1px 3px #FC511D, -12px -12px 20px rgba(252,0,0,0.52);
 }
 
 .wipimage{
