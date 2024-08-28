@@ -83,7 +83,41 @@ a:hover
     text-shadow: 0 0 60px red   , 0 0 10px rgb(5, 0, 0), 0 0 15px #FFF, 6px 1px 3px #FC511D, -12px -12px 20px rgba(252,0,0,0.52);
 }
 
-.wipimage{
+.infoboxTitle
+{
+
+    background-color:black;
+    z-index: 1;
+    border: 0.25vw inset rgb(255, 0, 0);
+    border-radius: 35px;
+    padding: 0.5vw;
+    color: white;
+    position: fixed;
+    font-size:2vw;
+    text-decoration: none solid rgb(68, 68, 68);
+    text-shadow: 0 0 5px #FFF, 0 0 10px rgb(5, 0, 0), 0 0 15px #FFF, 6px 1px 3px #FC511D, -12px -12px 20px rgba(252,0,0,0.52);
+
+}
+
+.infoboxParagraph
+{
+    background-color:rgb(255, 255, 255);
+    z-index: 0;
+    border: 0.25vw inset red;
+    border-radius:35px;
+    padding: 0.5vw;
+    padding-top:2vw;
+    color: rgb(0, 0, 0);
+    position: fixed;
+    width:25vw;
+    font-size:1vw;
+    text-decoration: none solid rgb(68, 68, 68);
+    text-shadow: 0 0 5px #FFF, 0 0 3px rgb(5, 0, 0), 0 0 15px #FFF, 6px 1px 3px #FC511D, -12px -12px 20px rgba(252,0,0,0.52);
+}
+
+
+.wipimage
+{
     background-image: url('img/wip.png');
     background-size: 50vw;
     background-repeat: no-repeat;
