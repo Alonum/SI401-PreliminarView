@@ -87,7 +87,7 @@ a:hover
 {
 
     background-color:black;
-    z-index: 1;
+    z-index: 2;
     border: 0.25vw inset rgb(255, 0, 0);
     border-radius: 35px;
     padding: 0.5vw;
@@ -102,7 +102,7 @@ a:hover
 .infoboxParagraph
 {
     background-color:rgb(255, 255, 255);
-    z-index: 0;
+    z-index: 1;
     border: 0.25vw inset red;
     border-radius:35px;
     padding: 0.5vw;
@@ -116,16 +116,17 @@ a:hover
 }
 
 
-.wipimage
+.homepagebackground
 {
-    background-image: url('img/wip.png');
-    background-size: 50vw;
-    background-repeat: no-repeat;
-    background-position: center top 10px;
-    right: 50px;
-    width: 150px;
-    height: 300px;
+    background-image: url('img/homepage.gif');
+    background-size: cover;
     background-color:black
+}
+
+.pageimages
+{
+    z-index:0;
+    position:fixed;
 }
 
 
