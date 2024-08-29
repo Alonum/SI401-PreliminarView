@@ -6,6 +6,8 @@
     position: fixed;
     margin:0;
 
+    z-index: 4;
+
     top:0;
     right:0;
     left: 0;
@@ -38,6 +40,7 @@
 .topicsBar{
     border: 0.25vw inset rgba(252,81,29,0.88);
     
+    z-index: 4;
     position:fixed;
     margin:0;
 
@@ -72,6 +75,7 @@
 a
 {
     text-shadow: 0 0 5px #FFF, 0 0 10px rgb(5, 0, 0), 0 0 15px #FFF, 6px 1px 3px #FC511D, -12px -12px 20px rgba(252,0,0,0.52);
+    z-index: 1;
     color: #FFFFFF;
     background: #130909;
     text-decoration: none solid rgb(68, 68, 68);
@@ -87,14 +91,14 @@ a:hover
 {
 
     background-color:black;
-    z-index: 2;
-    border: 5px inset rgb(255, 0, 0);
-    border-radius: 3vw;
+    z-index: 3;
+    border: 0.1em inset rgb(255, 0, 0);
+    border-radius: 3em;
     padding: 0.5vw;
+    width:5em;
     color: white;
-    position: fixed;
-    margin-bottom: 10vw;
-    font-size:40px;
+    position: relative;
+    font-size:2.6em;
     text-decoration: none solid rgb(68, 68, 68);
     text-shadow: 0 0 5px #FFF, 0 0 10px rgb(5, 0, 0), 0 0 15px #FFF, 6px 1px 3px #FC511D, -12px -12px 20px rgba(252,0,0,0.52);
 
@@ -103,16 +107,15 @@ a:hover
 .infoboxParagraph
 {
     background-color:rgb(255, 255, 255);
-    z-index: 1;
-    border: 5px inset red;
-    border-radius:3vw;
-    padding: 1vw;
-    padding-top:2vw;
-    margin-bottom: 10vw;
+    z-index: 2;
+    border: 0.2em inset red;
+    border-radius:3em;
+    padding: 1em;
+    padding-top:2em;
     color: rgb(0, 0, 0);
-    position: fixed;
-    width:25vw;
-    font-size:20px;
+    position: relative;
+    width:30vw;
+    font-size:1.5em;
     text-decoration: none solid rgb(68, 68, 68);
     text-shadow: 0 0 5px #FFF, 0 0 3px rgb(5, 0, 0), 0 0 15px #FFF, 6px 1px 3px #FC511D, -12px -12px 20px rgba(252,0,0,0.52);
 }
