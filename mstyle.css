@@ -88,12 +88,13 @@ a:hover
 
     background-color:black;
     z-index: 2;
-    border: 0.25vw inset rgb(255, 0, 0);
-    border-radius: 35px;
+    border: 5px inset rgb(255, 0, 0);
+    border-radius: 3vw;
     padding: 0.5vw;
     color: white;
     position: fixed;
-    font-size:2vw;
+    margin-bottom: 10vw;
+    font-size:40px;
     text-decoration: none solid rgb(68, 68, 68);
     text-shadow: 0 0 5px #FFF, 0 0 10px rgb(5, 0, 0), 0 0 15px #FFF, 6px 1px 3px #FC511D, -12px -12px 20px rgba(252,0,0,0.52);
 
@@ -103,14 +104,15 @@ a:hover
 {
     background-color:rgb(255, 255, 255);
     z-index: 1;
-    border: 0.25vw inset red;
-    border-radius:35px;
-    padding: 0.5vw;
+    border: 5px inset red;
+    border-radius:3vw;
+    padding: 1vw;
     padding-top:2vw;
+    margin-bottom: 10vw;
     color: rgb(0, 0, 0);
     position: fixed;
     width:25vw;
-    font-size:1vw;
+    font-size:20px;
     text-decoration: none solid rgb(68, 68, 68);
     text-shadow: 0 0 5px #FFF, 0 0 3px rgb(5, 0, 0), 0 0 15px #FFF, 6px 1px 3px #FC511D, -12px -12px 20px rgba(252,0,0,0.52);
 }
