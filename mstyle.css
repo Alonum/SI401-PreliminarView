@@ -31,10 +31,6 @@
     text-transform: uppercase;
     text-align: center;
 
-    background-image: url('img/wip.png');
-    background-repeat: no-repeat;
-    background-position: start;
-    background-size: 5vw;
 }
 
 .topicsBar{
@@ -65,10 +61,10 @@
     text-transform: uppercase;
     text-align: center;
 
-    background-image: url('img/mydeargui.png');
+    background-image: url('img/isee.gif');
     background-repeat: no-repeat;
-    background-position: start;
-    background-size: 2.5vw;
+    background-position: -1vw -1vw;
+    background-size: 5vw;
 }
 
 a
