@@ -132,4 +132,7 @@ a:hover
     position:fixed;
 }
 
-
+.hidden-buttons {
+    display: none;
+    margin-top: 10px;
+}
