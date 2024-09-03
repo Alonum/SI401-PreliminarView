@@ -10,14 +10,17 @@
     </head>
 
     <body>
-      <button id="expandButton">Mostrar Mais Opções</button>
+      <div>  
+            <button class = "pdfMainButton" id="expandButton"><img src="../img/PDF_Button.png" class="pdfButtonImage"></button>
 
-      <div id="hiddenButtons" class="hidden-buttons">
-          <button onclick="openPDF('../pdf/Unidade02_HTML.pdf')">Unidade 2</button>
-          <button onclick="openPDF('../pdf/Unidade03_HTML.pdf')">Unidade 3</button>
-          <button onclick="openPDF('../pdf/Unidade04_HTML.pdf')">Unidade 4</button>
-          <button onclick="openPDF('../pdf/Unidade05_HTML.pdf')">Unidade 5</button>
+            <div id="hiddenButtons" class="hidden-buttons">
+                    <button style="left:35vw;top:12vw;"class="pdfAltButtons" onclick="openPDF('../pdf/Unidade02_HTML.pdf')">Unidade 2</button>
+                    <button style="left:35vw;bottom:17vw;"class="pdfAltButtons" onclick="openPDF('../pdf/Unidade03_HTML.pdf')">Unidade 3</button>
+                    <button style="right:40vw;top:12vw;"class="pdfAltButtons" onclick="openPDF('../pdf/Unidade04_HTML.pdf')">Unidade 4</button>
+                    <button style="right:40vw;bottom:17vw;"class="pdfAltButtons" onclick="openPDF('../pdf/Unidade05_HTML.pdf')">Unidade 5</button>
+            </div>
       </div>
+
   
       <script>
 
@@ -28,12 +31,16 @@
 
           document.getElementById('expandButton').onclick = function() {
               var hiddenButtons = document.getElementById('hiddenButtons');
+              var imgElement = this.querySelector('img');
               if (hiddenButtons.style.display === "none" || hiddenButtons.style.display === "") {
                   hiddenButtons.style.display = "block";
-                  this.innerText = "Esconder Opções"; // Muda o texto do botão
+                  imgElement.src = "../img/PDF_ButtonClose.png";
+                  imgElement.alt = "Fechar";
               } else {
                   hiddenButtons.style.display = "none";
-                  this.innerText = "Mostrar Mais Opções"; // Restaura o texto original
+                  imgElement.src = "../img/PDF_Button.png";
+                  imgElement.alt = "Expandir";
+                   // Restaura o texto original
               }
           };
       </script>

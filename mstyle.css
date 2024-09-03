@@ -1,3 +1,7 @@
+:screensizes{
+    --centerScreen: 45vw;
+}
+
 .mainHead {
 	
     border: 0.5vw inset rgba(252,81,29,0.88);
@@ -135,4 +139,23 @@ a:hover
 .hidden-buttons {
     display: none;
     margin-top: 10px;
+}
+
+.pdfMainButton{
+    position: fixed;
+    left: 42vw;
+    top: 16vw;
+    background-color: rgba(0, 0, 0, 0.0001);   
+    border: 0px;
+}
+
+.pdfAltButtons{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.0001);   
+    border: 0px;
+}
+
+.pdfButtonImage{
+    width:10vw; 
+    height:10vw;
 }
