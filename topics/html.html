@@ -10,22 +10,34 @@
     </head>
 
     <body>
+      <div id="entire" style="z-index: 0">
+          <div>
+            <a href="../homepage.html">
+              <button style="background-color: rgba(0, 0, 0, 0.0001);border: 0px;position:fixed;left:1vw;top:1vw;"><img src="../img/SetaRetorno.png" style="width: 3vw;height:2vw;"></button>
+            </a>
+          </div>
 
-      <div>
-        <a href="../homepage.html">
-          <button style="background-color: rgba(0, 0, 0, 0.0001);border: 0px;position:fixed;left:1vw;top:1vw;"><img src="../img/SetaRetorno.png" style="width: 3vw;height:2vw;"></button>
-        </a>
-      </div>
+          <div>  
+                <button onclick="expandButton('../img/PDF_Button.png','../img/PDF_ButtonClose.png','hiddenPdfButtons','expandPdfButton')" class = "pdfMainButton" id="expandPdfButton"><img src="../img/PDF_Button.png" class="pdfButtonImage"></button>
 
-      <div>  
-            <button onclick="expandButton('../img/PDF_Button.png','../img/PDF_ButtonClose.png','hiddenButtons','expandButton')" class = "pdfMainButton" id="expandButton"><img src="../img/PDF_Button.png" class="pdfButtonImage"></button>
+                <div id="hiddenPdfButtons" class="hidden-buttons">
+                        <button style="left:30vw;top:12vw;transform: rotate(-30deg);"class="pdfAltButtons" onclick="openPDF('../pdf/Unidade02_HTML.pdf')">Unidade 2</button>
+                        <button style="left:30vw;bottom:17vw;transform: rotate(-30deg);"class="pdfAltButtons" onclick="openPDF('../pdf/Unidade03_HTML.pdf')">Unidade 3</button>
+                        <button style="right:35vw;top:12vw;transform: rotate(30deg);"class="pdfAltButtons" onclick="openPDF('../pdf/Unidade04_HTML.pdf')">Unidade 4</button>
+                        <button style="right:35vw;bottom:17vw;transform: rotate(30deg);"class="pdfAltButtons" onclick="openPDF('../pdf/Unidade05_HTML.pdf')">Unidade 5</button>
+                </div>
+          </div>
 
-            <div id="hiddenButtons" class="hidden-buttons">
-                    <button style="left:30vw;top:12vw;transform: rotate(-30deg);"class="pdfAltButtons" onclick="openPDF('../pdf/Unidade02_HTML.pdf')">Unidade 2</button>
-                    <button style="left:30vw;bottom:17vw;transform: rotate(-30deg);"class="pdfAltButtons" onclick="openPDF('../pdf/Unidade03_HTML.pdf')">Unidade 3</button>
-                    <button style="right:35vw;top:12vw;transform: rotate(30deg);"class="pdfAltButtons" onclick="openPDF('../pdf/Unidade04_HTML.pdf')">Unidade 4</button>
-                    <button style="right:35vw;bottom:17vw;transform: rotate(30deg);"class="pdfAltButtons" onclick="openPDF('../pdf/Unidade05_HTML.pdf')">Unidade 5</button>
+          <div>  
+            <button onclick="expandButton('../img/Referencias.png','../img/ReferenciasHover.png','hiddenReferenceButtons','expandReferenceButton')" class = "referenceMainButton" id="expandReferenceButton"><img src="../img/Referencias.png" class="pdfButtonImage"></button>
+
+            <div id="hiddenReferenceButtons" class="hidden-buttons">
+                    <button style="left:2vw;top:13vw;transform: rotate(30deg);"class="pdfAltButtons" onclick="openPDF()">W3Schools</button>
+                    <button style="left:0.5vw;bottom:15vw;transform: rotate(30deg);"class="pdfAltButtons" onclick="openPDF()">W3C Specification</button>
+                    <button style="right:60vw;top:12vw;transform: rotate(-30deg);"class="pdfAltButtons" onclick="openPDF()">W3C Validation</button>
+                    <button style="right:60vw;bottom:15vw;transform: rotate(-30deg);"class="pdfAltButtons" onclick="openPDF()">WHTWMG Standard</button>
             </div>
+        </div>
       </div>
 
   
@@ -38,16 +50,24 @@
 
           function expandButton(imageLocStringEx,imageLocStringClo, hiddenId, expandId) {
               var hiddenButtonsId = document.getElementById(hiddenId);
-              var imgElement = document.getElementById(expandId).querySelector('img');
+              var expandButtonsId = document.getElementById(expandId)
+              var imgElement = expandButtonsId.querySelector('img');
+              
             
               if (hiddenButtonsId.style.display === "none" || hiddenButtonsId.style.display === "") {
                 hiddenButtonsId.style.display = "block";
                   imgElement.src = imageLocStringClo;
                   imgElement.alt = "Fechar";
+                  document.getElementById('entire').style.filter = "blur(100px)";
+                  hiddenButtonsId.style.filter = "blur(0px);z-index:5;";
+                  expandButtonsId.style.filter = "blur(0px)z-index:5;";
               } else {
                   hiddenButtonsId.style.display = "none";
                   imgElement.src = imageLocStringEx;
                   imgElement.alt = "Expandir";
+                  hiddenButtonsId.style.filter = "blur(0px);z-index:0;";
+                  expandButtonsId.style.filter = "blur(0px)z-index:0;";
+                  document.getElementById('entire').style.filter = "blur(0px)";
                    // Restaura o texto original
               }
           };
