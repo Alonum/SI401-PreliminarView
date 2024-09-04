@@ -147,6 +147,7 @@ a:hover
     top: 16vw;
     background-color: rgba(0, 0, 0, 0.0001);   
     border: 0px;
+
 }
 
 .referenceMainButton{
@@ -155,6 +156,7 @@ a:hover
     top: 20vw;
     background-color: rgba(0, 0, 0, 0.0001);   
     border: 0px;
+
 }
 
 .pdfAltButtons{
@@ -167,6 +169,7 @@ a:hover
     font-family: "Brush Script MT";
     text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, 2px 2px 2px #CE0000, 2px 2px 7px #CE0000, 2px 2px 11px #CE0000, 2px 2px 15px #CE0000, 2px 2px 18px #CE0000, 2px 1px 18px #CE0000, 2px -7px 18px #CE0000, 2px -10px 18px #CE0000, 2px -10px 18px #CE0000;
     color: #FFFFFF;
+
 }
 
 .pdfAltButtons:hover{
@@ -176,9 +179,17 @@ a:hover
     background-position: center;
     color: black;
     text-shadow: black 0px 0px 5px, black 0px 0px 10px, 2px 2px 2px #CE0000, 2px 2px 7px #CE0000, 2px 2px 11px #CE0000, 2px 2px 15px #CE0000, 2px 2px 18px #CE0000, 2px 1px 18px #CE0000, 2px -7px 18px #CE0000, 2px -10px 18px #CE0000, 2px -10px 18px #CE0000;
+
 }
 
 .pdfButtonImage{
     width:10vw; 
     height:10vw;
+}
+
+.blur{
+    filter:blur(2000px);
+    pointer-events:none;
+    background-color: red;
+    transition: all 5s ease;  
 }

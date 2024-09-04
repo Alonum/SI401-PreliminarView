@@ -10,14 +10,14 @@
     </head>
 
     <body>
-      <div id="entire" style="z-index: 0">
+
           <div>
             <a href="../homepage.html">
               <button style="background-color: rgba(0, 0, 0, 0.0001);border: 0px;position:fixed;left:1vw;top:1vw;"><img src="../img/SetaRetorno.png" style="width: 3vw;height:2vw;"></button>
             </a>
           </div>
 
-          <div>  
+          <div id="PDFDiv">  
                 <button onclick="expandButton('../img/PDF_Button.png','../img/PDF_ButtonClose.png','hiddenPdfButtons','expandPdfButton')" class = "pdfMainButton" id="expandPdfButton"><img src="../img/PDF_Button.png" class="pdfButtonImage"></button>
 
                 <div id="hiddenPdfButtons" class="hidden-buttons">
@@ -28,7 +28,7 @@
                 </div>
           </div>
 
-          <div>  
+          <div id="RefDiv">  
             <button onclick="expandButton('../img/Referencias.png','../img/ReferenciasHover.png','hiddenReferenceButtons','expandReferenceButton')" class = "referenceMainButton" id="expandReferenceButton"><img src="../img/Referencias.png" class="pdfButtonImage"></button>
 
             <div id="hiddenReferenceButtons" class="hidden-buttons">
@@ -38,7 +38,6 @@
                     <button style="right:60vw;bottom:15vw;transform: rotate(-30deg);"class="pdfAltButtons" onclick="openPDF()">WHTWMG Standard</button>
             </div>
         </div>
-      </div>
 
   
       <script>
@@ -58,19 +57,47 @@
                 hiddenButtonsId.style.display = "block";
                   imgElement.src = imageLocStringClo;
                   imgElement.alt = "Fechar";
-                  document.getElementById('entire').style.filter = "blur(100px)";
-                  hiddenButtonsId.style.filter = "blur(0px);z-index:5;";
-                  expandButtonsId.style.filter = "blur(0px)z-index:5;";
+                  blurOthers(expandButtonsId.parentElement.id);
               } else {
                   hiddenButtonsId.style.display = "none";
                   imgElement.src = imageLocStringEx;
                   imgElement.alt = "Expandir";
-                  hiddenButtonsId.style.filter = "blur(0px);z-index:0;";
-                  expandButtonsId.style.filter = "blur(0px)z-index:0;";
-                  document.getElementById('entire').style.filter = "blur(0px)";
-                   // Restaura o texto original
+                  unblurOthers(expandButtonsId.parentElement.id);
               }
           };
+
+          function blurOthers(id){
+            let divId = document.getElementById(id)
+
+            if(divId == document.getElementById("PDFDiv")){
+              document.getElementById("RefDiv").classList.add('blur');
+              //-Implementar materiais-document.getElementById().classList.add('blur');
+            }
+            if(divId == document.getElementById("RefDiv")){
+              document.getElementById("PDFDiv").classList.add('blur');
+              //-Implementar materiais-document.getElementById().classList.add('blur');
+            }
+            //if(id == document.getElementById("MatDiv")){
+              //document.getElementById("PDFDiv").classList.add('blur');
+              //document.getElementById("RefDiv").classList.add('blur');
+            //}
+          };
+          function unblurOthers(id){
+            let divId = document.getElementById(id)
+
+            if(divId == document.getElementById("PDFDiv")){
+              document.getElementById("RefDiv").classList.remove('blur');
+              //-Implementar materiais-document.getElementById().classList.remove('blur');
+            }
+            if(divId == document.getElementById("RefDiv")){
+              document.getElementById("PDFDiv").classList.remove('blur');
+              //-Implementar materiais-document.getElementById().classList.remove('blur');
+            }
+            //if(id == document.getElementById("MatDiv")){
+              //document.getElementById("PDFDiv").classList.remove('blur');
+              //document.getElementById("RefDiv").classList.remove('blur');
+            //}
+          }
       </script>
     </body>
 
