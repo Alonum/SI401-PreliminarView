@@ -151,8 +151,23 @@ a:hover
 
 .pdfAltButtons{
     position: fixed;
-    background-color: rgba(0, 0, 0, 0.0001);   
-    border: 0px;
+    background-color: rgba(0, 0, 0, 0.0001);
+    padding:2vw;   
+    border: 1px solid rgba(0, 0, 0, 0.0001);
+    border-radius: 5vw;
+    font-size:2vw;
+    font-family: "Brush Script MT";
+    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, 2px 2px 2px #CE0000, 2px 2px 7px #CE0000, 2px 2px 11px #CE0000, 2px 2px 15px #CE0000, 2px 2px 18px #CE0000, 2px 1px 18px #CE0000, 2px -7px 18px #CE0000, 2px -10px 18px #CE0000, 2px -10px 18px #CE0000;
+    color: #FFFFFF;
+}
+
+.pdfAltButtons:hover{
+    background-image: url("img/bloodSplatter.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: black;
+    text-shadow: black 0px 0px 5px, black 0px 0px 10px, 2px 2px 2px #CE0000, 2px 2px 7px #CE0000, 2px 2px 11px #CE0000, 2px 2px 15px #CE0000, 2px 2px 18px #CE0000, 2px 1px 18px #CE0000, 2px -7px 18px #CE0000, 2px -10px 18px #CE0000, 2px -10px 18px #CE0000;
 }
 
 .pdfButtonImage{
