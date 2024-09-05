@@ -40,7 +40,7 @@
         </div>
 
         <div id="ExDiv">  
-          <button onclick="moveAbove('expandExButton','hiddenExButtons'); expandButton('../img/Referencias.png','../img/ReferenciasHover.png','hiddenExButtons','expandExButton')" class = "exMainButton" id="expandExButton"><img src="../img/Referencias.png" class="pdfButtonImage"></button>
+          <button onclick="moveAbove('expandExButton');moveAbove('hiddenExButtons'); expandButton('../img/Referencias.png','../img/ReferenciasHover.png','hiddenExButtons','expandExButton')" class = "exMainButton" id="expandExButton"><img src="../img/Referencias.png" class="pdfButtonImage"></button>
 
           <div id="hiddenExButtons" class="hidden-buttons">
             <button style="right:46vw;top:20vw;"class="exAltButtons" onclick="window.open('http://w3schools.com/html/default.asp', '_blank')">Exercício 1</button>
@@ -117,16 +117,14 @@
             }
           };
 
-          function moveAbove(titleId, optionsId){
-            let elementId = document.getElementById(titleId);
-            let childrenId = document.getElementById(optionsId);
+          function moveAbove(id){
+            let elementId = document.getElementById(id);
 
             if(elementId.classList.contains("moveAbove")){
               elementId.classList.remove("moveAbove");
-              childrenId.classList.remove("exAltButtons")
+              
             }else{
-              elementId.classList.add("moveAbove");
-              childrenId.classList.add("exAltButtons")
+              elementId.classList.add("moveAbove");   
             }
           }
       </script>
