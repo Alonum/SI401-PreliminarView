@@ -40,13 +40,13 @@
         </div>
 
         <div id="ExDiv">  
-          <button onclick="moveAbove('expandExButton');moveAbove('hiddenExButtons'); expandButton('../img/Referencias.png','../img/ReferenciasHover.png','hiddenExButtons','expandExButton')" class = "exMainButton" id="expandExButton"><img src="../img/Referencias.png" class="pdfButtonImage"></button>
+          <button onclick="moveAbove('expandExButton');moveAbove('hiddenExButtons');expandButton('../img/Referencias.png','../img/ReferenciasHover.png','hiddenExButtons','expandExButton');" class = "exMainButton" id="expandExButton"><img src="../img/Referencias.png" class="pdfButtonImage"></button>
 
           <div id="hiddenExButtons" class="hidden-buttons">
-            <button style="right:46vw;top:20vw;"class="exAltButtons" onclick="window.open('http://w3schools.com/html/default.asp', '_blank')">Exercício 1</button>
-            <button style="right:46vw;top:25vw;"class="exAltButtons" onclick="window.open('http://www.w3.org/TR/html4/', '_blank')">Exercício 2</button>
-            <button style="right:46vw;top:30vw;"class="exAltButtons" onclick="window.open('https://validator.w3.org/', '_blank')">Exercício 3</button>
-            <button style="right:46vw;top:35vw;"class="exAltButtons" onclick="window.open('https://html.spec.whatwg.org/', '_blank')">Exercício 4</button>
+              <button style="right:46vw;top:20vw;"class="exAltButtons" onclick="window.open('http://w3schools.com/html/default.asp', '_blank')">Exercício 1</button>
+              <button style="right:46vw;top:25vw;"class="exAltButtons" onclick="window.open('http://www.w3.org/TR/html4/', '_blank')">Exercício 2</button>
+              <button style="right:46vw;top:30vw;"class="exAltButtons" onclick="window.open('https://validator.w3.org/', '_blank')">Exercício 3</button>
+              <button style="right:46vw;top:35vw;"class="exAltButtons" onclick="window.open('https://html.spec.whatwg.org/', '_blank')">Exercício 4</button>
           </div>
         </div>
         
@@ -82,21 +82,36 @@
                   unblurOthers(expandButtonsId.parentElement.id);
               }
           };
-
+          function blur(id)
+          {
+            let divId = document.getElementById(id)
+            divId.classList.add('blur')
+          }
+          function unblur(id)
+          {
+            let divId = document.getElementById(id)
+            divId.classList.remove('blur')
+          }
           function blurOthers(id){
             let divId = document.getElementById(id)
-            console.log(id);
+            //console.log(id);
             if(divId == document.getElementById("PDFDiv")){
-              document.getElementById("RefDiv").classList.add('blur');
-              document.getElementById("ExDiv").classList.add('blur');
+              blur("RefDiv")
+              blur("ExDiv")
+              //document.getElementById("RefDiv").classList.add('blur');
+              //document.getElementById("ExDiv").classList.add('blur');
             }
             if(divId == document.getElementById("RefDiv")){
-              document.getElementById("PDFDiv").classList.add('blur');
-              document.getElementById("ExDiv").classList.add('blur');
+              blur("PDFDiv")
+              blur("ExDiv")
+              //document.getElementById("PDFDiv").classList.add('blur');
+              //document.getElementById("ExDiv").classList.add('blur');
             }
             if(divId == document.getElementById("ExDiv")){
-              document.getElementById("PDFDiv").classList.add('blur');
-              document.getElementById("RefDiv").classList.add('blur');
+              blur("PDFDiv")
+              blur("RefDiv")
+              //document.getElementById("PDFDiv").classList.add('blur');
+              //document.getElementById("RefDiv").classList.add('blur');
             }
           };
 
@@ -104,16 +119,22 @@
             let divId = document.getElementById(id)
 
             if(divId == document.getElementById("PDFDiv")){
-              document.getElementById("RefDiv").classList.remove('blur');
-              document.getElementById("ExDiv").classList.remove('blur');
+              unblur("RefDiv")
+              unblur("ExDiv")
+              //document.getElementById("RefDiv").classList.remove('blur');
+              //document.getElementById("ExDiv").classList.remove('blur');
             }
             if(divId == document.getElementById("RefDiv")){
-              document.getElementById("PDFDiv").classList.remove('blur');
-              document.getElementById("ExDiv").classList.remove('blur');
+              unblur("PDFDiv")
+              unblur("ExDiv")
+              //document.getElementById("PDFDiv").classList.remove('blur');
+              //document.getElementById("ExDiv").classList.remove('blur');
             }
             if(divId == document.getElementById("ExDiv")){
-              document.getElementById("PDFDiv").classList.remove('blur');
-              document.getElementById("RefDiv").classList.remove('blur');
+              unblur("PDFDiv")
+              unblur("RefDiv")
+              //document.getElementById("PDFDiv").classList.remove('blur');
+              //document.getElementById("RefDiv").classList.remove('blur');
             }
           };
 
