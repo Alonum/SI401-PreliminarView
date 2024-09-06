@@ -40,7 +40,7 @@
         </div>
 
         <div id="ExDiv">  
-          <button onclick="moveAbove('expandExButton');moveAbove('hiddenExButtons');expandButton('../img/Referencias.png','../img/ReferenciasHover.png','hiddenExButtons','expandExButton');" class = "exMainButton" id="expandExButton"><img src="../img/Referencias.png" class="pdfButtonImage"></button>
+          <button onclick="moveAbove('expandExButton');expandButton('../img/Referencias.png','../img/ReferenciasHover.png','hiddenExButtons','expandExButton');" class = "exMainButton" id="expandExButton"><img src="../img/Referencias.png" class="pdfButtonImage"></button>
 
           <div id="hiddenExButtons" class="hidden-buttons">
               <button style="right:46vw;top:20vw;"class="exAltButtons" onclick="window.open('http://w3schools.com/html/default.asp', '_blank')">Exercício 1</button>
@@ -98,20 +98,14 @@
             if(divId == document.getElementById("PDFDiv")){
               blur("RefDiv")
               blur("ExDiv")
-              //document.getElementById("RefDiv").classList.add('blur');
-              //document.getElementById("ExDiv").classList.add('blur');
             }
             if(divId == document.getElementById("RefDiv")){
               blur("PDFDiv")
               blur("ExDiv")
-              //document.getElementById("PDFDiv").classList.add('blur');
-              //document.getElementById("ExDiv").classList.add('blur');
             }
             if(divId == document.getElementById("ExDiv")){
               blur("PDFDiv")
               blur("RefDiv")
-              //document.getElementById("PDFDiv").classList.add('blur');
-              //document.getElementById("RefDiv").classList.add('blur');
             }
           };
 
@@ -121,20 +115,14 @@
             if(divId == document.getElementById("PDFDiv")){
               unblur("RefDiv")
               unblur("ExDiv")
-              //document.getElementById("RefDiv").classList.remove('blur');
-              //document.getElementById("ExDiv").classList.remove('blur');
             }
             if(divId == document.getElementById("RefDiv")){
               unblur("PDFDiv")
               unblur("ExDiv")
-              //document.getElementById("PDFDiv").classList.remove('blur');
-              //document.getElementById("ExDiv").classList.remove('blur');
             }
             if(divId == document.getElementById("ExDiv")){
               unblur("PDFDiv")
               unblur("RefDiv")
-              //document.getElementById("PDFDiv").classList.remove('blur');
-              //document.getElementById("RefDiv").classList.remove('blur');
             }
           };
 
