@@ -11,45 +11,47 @@
 
     <body class ="topicspagebackground">
 
-        <div>
+        <div id="returnButton">
           <a href="../homepage.html">
-            <button id="returnButton" style="background-color: rgba(0, 0, 0, 0.0001);border: 0px;position:fixed;left:1vw;top:1vw;"><img src="../img/SetaRetorno.png" style="width: 3vw;height:2vw;"></button>
+            <button style="background-color: rgba(0, 0, 0, 0.0001);border: 0px;position:fixed;left:1vw;top:1vw;"><img src="../img/SetaRetorno.png" style="width: 3vw;height:2vw;"></button>
           </a>
         </div>
 
-        <div id="PDFDiv">  
-          <button onclick="expandButton('../img/PDF_Button.png','../img/PDF_ButtonClose.png','hiddenPdfButtons','expandPdfButton')" class = "pdfMainButton" id="expandPdfButton"><img src="../img/PDF_Button.png" class="pdfButtonImage"></button>
 
-          <div id="hiddenPdfButtons" class="hidden-buttons">
-            <button style="left:30vw;top:12vw;transform: rotate(-30deg);"class="pdfAltButtons" onclick="openPDF('../pdf/Unidade02_HTML.pdf')">Unidade 2</button>
-            <button style="left:30vw;bottom:17vw;transform: rotate(-30deg);"class="pdfAltButtons" onclick="openPDF('../pdf/Unidade03_HTML.pdf')">Unidade 3</button>
-            <button style="right:35vw;top:12vw;transform: rotate(30deg);"class="pdfAltButtons" onclick="openPDF('../pdf/Unidade04_HTML.pdf')">Unidade 4</button>
-            <button style="right:35vw;bottom:17vw;transform: rotate(30deg);"class="pdfAltButtons" onclick="openPDF('../pdf/Unidade05_HTML.pdf')">Unidade 5</button>
+        <div id="infoButtons">
+          <div id="PDFDiv">  
+            <button onclick="expandButton('../img/PDF_Button.png','../img/PDF_ButtonClose.png','hiddenPdfButtons','expandPdfButton')" class = "pdfMainButton" id="expandPdfButton"><img src="../img/PDF_Button.png" class="pdfButtonImage"></button>
+
+            <div id="hiddenPdfButtons" class="hidden-buttons">
+              <button style="left:30vw;top:12vw;transform: rotate(-30deg);"class="pdfAltButtons" onclick="openPDF('../pdf/Unidade02_HTML.pdf')">Unidade 2</button>
+              <button style="left:30vw;bottom:17vw;transform: rotate(-30deg);"class="pdfAltButtons" onclick="openPDF('../pdf/Unidade03_HTML.pdf')">Unidade 3</button>
+              <button style="right:35vw;top:12vw;transform: rotate(30deg);"class="pdfAltButtons" onclick="openPDF('../pdf/Unidade04_HTML.pdf')">Unidade 4</button>
+              <button style="right:35vw;bottom:17vw;transform: rotate(30deg);"class="pdfAltButtons" onclick="openPDF('../pdf/Unidade05_HTML.pdf')">Unidade 5</button>
+            </div>
+          </div>
+
+          <div id="RefDiv">  
+            <button onclick="expandButton('../img/Referencias.png','../img/ReferenciasHover.png','hiddenReferenceButtons','expandReferenceButton')" class = "referenceMainButton" id="expandReferenceButton"><img src="../img/Referencias.png" class="pdfButtonImage"></button>
+
+            <div id="hiddenReferenceButtons" class="hidden-buttons">
+              <button style="left:2vw;top:13vw;transform: rotate(30deg);"class="pdfAltButtons" onclick="window.open('http://w3schools.com/html/default.asp', '_blank')">W3Schools</button>
+              <button style="left:0.5vw;bottom:15vw;transform: rotate(30deg);"class="pdfAltButtons" onclick="window.open('http://www.w3.org/TR/html4/', '_blank')">W3C Specification</button>
+              <button style="right:60vw;top:12vw;transform: rotate(-30deg);"class="pdfAltButtons" onclick="window.open('https://validator.w3.org/', '_blank')">W3C Validation</button>
+              <button style="right:60vw;bottom:15vw;transform: rotate(-30deg);"class="pdfAltButtons" onclick="window.open('https://html.spec.whatwg.org/', '_blank')">WHTWMG Standard</button>
+            </div>
+          </div>
+
+          <div id="ExDiv">  
+            <button onclick="moveAbove('expandExButton');expandButton('../img/Exercicios.png','../img/ExerciciosHover.png','hiddenExButtons','expandExButton');" class = "exMainButton" id="expandExButton"><img src="../img/Exercicios.png" class="pdfButtonImage"></button>
+
+            <div id="hiddenExButtons" class="hidden-buttons">
+                <button style="right:46vw;top:20vw;"class="exAltButtons" onclick="window.open('http://w3schools.com/html/default.asp', '_blank')">Exercício 1</button>
+                <button style="right:46vw;top:25vw;"class="exAltButtons" onclick="window.open('http://www.w3.org/TR/html4/', '_blank')">Exercício 2</button>
+                <button style="right:46vw;top:30vw;"class="exAltButtons" onclick="window.open('https://validator.w3.org/', '_blank')">Exercício 3</button>
+                <button style="right:46vw;top:35vw;"class="exAltButtons" onclick="window.open('https://html.spec.whatwg.org/', '_blank')">Exercício 4</button>
+            </div>
           </div>
         </div>
-
-        <div id="RefDiv">  
-          <button onclick="expandButton('../img/Referencias.png','../img/ReferenciasHover.png','hiddenReferenceButtons','expandReferenceButton')" class = "referenceMainButton" id="expandReferenceButton"><img src="../img/Referencias.png" class="pdfButtonImage"></button>
-
-          <div id="hiddenReferenceButtons" class="hidden-buttons">
-            <button style="left:2vw;top:13vw;transform: rotate(30deg);"class="pdfAltButtons" onclick="window.open('http://w3schools.com/html/default.asp', '_blank')">W3Schools</button>
-            <button style="left:0.5vw;bottom:15vw;transform: rotate(30deg);"class="pdfAltButtons" onclick="window.open('http://www.w3.org/TR/html4/', '_blank')">W3C Specification</button>
-            <button style="right:60vw;top:12vw;transform: rotate(-30deg);"class="pdfAltButtons" onclick="window.open('https://validator.w3.org/', '_blank')">W3C Validation</button>
-            <button style="right:60vw;bottom:15vw;transform: rotate(-30deg);"class="pdfAltButtons" onclick="window.open('https://html.spec.whatwg.org/', '_blank')">WHTWMG Standard</button>
-          </div>
-        </div>
-
-        <div id="ExDiv">  
-          <button onclick="moveAbove('expandExButton');expandButton('../img/Exercicios.png','../img/ExerciciosHover.png','hiddenExButtons','expandExButton');" class = "exMainButton" id="expandExButton"><img src="../img/Exercicios.png" class="pdfButtonImage"></button>
-
-          <div id="hiddenExButtons" class="hidden-buttons">
-              <button style="right:46vw;top:20vw;"class="exAltButtons" onclick="window.open('http://w3schools.com/html/default.asp', '_blank')">Exercício 1</button>
-              <button style="right:46vw;top:25vw;"class="exAltButtons" onclick="window.open('http://www.w3.org/TR/html4/', '_blank')">Exercício 2</button>
-              <button style="right:46vw;top:30vw;"class="exAltButtons" onclick="window.open('https://validator.w3.org/', '_blank')">Exercício 3</button>
-              <button style="right:46vw;top:35vw;"class="exAltButtons" onclick="window.open('https://html.spec.whatwg.org/', '_blank')">Exercício 4</button>
-          </div>
-        </div>
-        
 
         
 
