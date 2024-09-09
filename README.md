@@ -28,9 +28,9 @@ Versão preliminar de um site para a disciplina SI401. Atividade de Fixação 20
 	- [ ]	Referências
 	- [ ]	Materiais Externos
   - [x]	HTML
-    - [ ]	Imagens
-	- [ ]	Referências
-	- [ ]	Materiais Externos
+    - [x]	Imagens
+	- [x]	Referências
+	- [x]	Materiais Externos
   - [x]	CSS
     - [ ]	Imagens
 	- [ ]	Referências
@@ -44,9 +44,9 @@ Versão preliminar de um site para a disciplina SI401. Atividade de Fixação 20
 	- [ ]	Referências
 	- [ ]	Materiais Externos
   - [x]	Tópico Complementar: Acessibilidade na Web
-	- [ ]	Materiais Externos
+	- [x]	Materiais Externos
 
-- [ ] **Layout**
+- [x] **Layout**
 
 - [ ] **Padrão W3C**
 
