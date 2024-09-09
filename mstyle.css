@@ -122,6 +122,14 @@ a:hover
     text-shadow: 0 0 5px #FFF, 0 0 3px rgb(5, 0, 0), 0 0 15px #FFF, 6px 1px 3px #FC511D, -12px -12px 20px rgba(252,0,0,0.52);
 }
 
+@keyframes fadeIn{
+    0%{opacity:0;}
+    100%{opacity:1;}
+}
+
+.showingUp{
+    animation: fadeIn 2s;
+}
 
 .homepagebackground
 {
