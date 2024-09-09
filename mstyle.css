@@ -162,7 +162,7 @@ a:hover
     top: 20vw;
     background-color: rgba(0, 0, 0, 0.0001);   
     border: 0px;
-    filter: drop-shadow(white 0vw -1vw 1vw);
+    filter: drop-shadow(white 0vw -2vw 3vw);
 
 }
 
@@ -172,7 +172,7 @@ a:hover
     top: 20vw;
     background-color: rgba(0, 0, 0, 0.0001);   
     border: 0px;
-    filter: drop-shadow(white 0vw 3vw 1vw);
+    filter: drop-shadow(white 0vw 3vw 2vw);
 }
 
 .pdfAltButtons{
@@ -237,4 +237,15 @@ a:hover
     left: 42vw;
     top: 10vw;
     transition: all 1500ms ease;
+}
+
+.coolRectangle{
+    width:1000vw;
+    height:16vw;
+    background-color: red;
+    position:fixed;
+    top:15vw;
+    left:0vw;
+    opacity: 0.3;
+    filter:blur(1vw);
 }

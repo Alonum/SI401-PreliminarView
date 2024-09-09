@@ -15,7 +15,10 @@
             <button onclick="window.open('../homepage.html', '_self')" style="background-color: rgba(0, 0, 0, 0.0001);border: 0px;position:fixed;left:1vw;top:1vw;"><img src="../img/SetaRetorno.png" style="width: 3vw;height:2vw;" alt = "Retornar a pagina principal"></button>
         </div>
 
+        <div id="coolRectangle" class="coolRectangle">
 
+        </div>
+        
         <div id="infoButtons">
           <div id="PDFDiv">  
             <button onclick="expandButton('../img/PDF_Button.png','../img/PDF_ButtonClose.png','hiddenPdfButtons','expandPdfButton')" class = "pdfMainButton" id="expandPdfButton"><img src="../img/PDF_Button.png" class="pdfButtonImage" alt = "Abrir PDFs"></button>
@@ -43,10 +46,10 @@
             <button onclick="moveAbove('expandExButton');expandButton('../img/Exercicios.png','../img/ExerciciosHover.png','hiddenExButtons','expandExButton');" class = "exMainButton" id="expandExButton"><img src="../img/Exercicios.png" class="pdfButtonImage" alt = "Abrir Exercicios"></button>
 
             <div id="hiddenExButtons" class="hidden-buttons">
-                <button style="right:46vw;top:20vw;" class="exAltButtons" onclick="window.open('http://w3schools.com/html/default.asp', '_blank')">Exercício 1</button>
-                <button style="right:46vw;top:25vw;" class="exAltButtons" onclick="window.open('http://www.w3.org/TR/html4/', '_blank')">Exercício 2</button>
-                <button style="right:46vw;top:30vw;" class="exAltButtons" onclick="window.open('https://validator.w3.org/', '_blank')">Exercício 3</button>
-                <button style="right:46vw;top:35vw;" class="exAltButtons" onclick="window.open('https://html.spec.whatwg.org/', '_blank')">Exercício 4</button>
+              <a style="right:46vw;top:20vw;" class="exAltButtons" class="pdfAltButtons" href="exercicios/exercicio1-html.zip" download = "Exercicio 1">Exercicio 1</a>
+              <a style="right:46vw;top:25vw;" class="exAltButtons" class="pdfAltButtons" href="exercicios/exercicio2-html.zip" download = "Exercicio 1">Exercicio 2</a>
+              <a style="right:46vw;top:30vw;" class="exAltButtons" class="pdfAltButtons" href="exercicios/exercicio3-html.zip" download = "Exercicio 1">Exercicio 3</a>
+              <!--<a style="right:46vw;top:35vw;" class="exAltButtons" class="pdfAltButtons" href="exercicios/exercicio.zip" download = "Exercicio 1">Exercicio 4</a>-->
             </div>
           </div>
         </div>
