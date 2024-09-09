@@ -15,10 +15,11 @@
             <button onclick="window.open('../homepage.html', '_self')" style="background-color: rgba(0, 0, 0, 0.0001);border: 0px;position:fixed;left:1vw;top:1vw;"><img src="../img/SetaRetorno.png" style="width: 3vw;height:2vw;" alt = "Retornar a pagina principal"></button>
         </div>
 
-        <div id="coolRectangle" class="coolRectangle">
+        <div id = "pageTitle" class="pageTitle">HTML</div>
 
+        <div id="coolRectangle" class="coolRectangle">
         </div>
-        
+
         <div id="infoButtons">
           <div id="PDFDiv">  
             <button onclick="expandButton('../img/PDF_Button.png','../img/PDF_ButtonClose.png','hiddenPdfButtons','expandPdfButton')" class = "pdfMainButton" id="expandPdfButton"><img src="../img/PDF_Button.png" class="pdfButtonImage" alt = "Abrir PDFs"></button>
@@ -58,89 +59,7 @@
 
 
   
-      <script>
-
-
-        function openPDF(string){
-            window.open(string,'_blank');
-        }
-
-          function expandButton(imageLocStringEx,imageLocStringClo, hiddenId, expandId) {
-              var hiddenButtonsId = document.getElementById(hiddenId);
-              var expandButtonsId = document.getElementById(expandId)
-              //console.log(expandButtonsId);
-              console.log(expandButtonsId.parentElement.id)
-              var imgElement = expandButtonsId.querySelector('img');
-              
-            
-              if (hiddenButtonsId.style.display === "none" || hiddenButtonsId.style.display === "") {
-                hiddenButtonsId.style.display = "block";
-                  imgElement.src = imageLocStringClo;
-                  imgElement.alt = "Fechar";
-                  blurOthers(expandButtonsId.parentElement.id);
-              } else {
-                  hiddenButtonsId.style.display = "none";
-                  imgElement.src = imageLocStringEx;
-                  imgElement.alt = "Expandir";
-                  unblurOthers(expandButtonsId.parentElement.id);
-              }
-          };
-          function blur(id)
-          {
-            let divId = document.getElementById(id)
-            divId.classList.add('blur')
-          }
-          function unblur(id)
-          {
-            let divId = document.getElementById(id)
-            divId.classList.remove('blur')
-          }
-          function blurOthers(id){
-            let divId = document.getElementById(id)
-            //console.log(id);
-            blur("returnButton");
-
-            if(divId == document.getElementById("PDFDiv")){
-              blur("RefDiv")
-              blur("ExDiv")
-            }
-            if(divId == document.getElementById("RefDiv")){
-              blur("PDFDiv")
-              blur("ExDiv")
-            }
-            if(divId == document.getElementById("ExDiv")){
-              blur("PDFDiv")
-              blur("RefDiv")
-            }
-          };
-
-          function unblurOthers(id){
-            let divId = document.getElementById(id)
-            unblur("returnButton");
-            if(divId == document.getElementById("PDFDiv")){
-              unblur("RefDiv")
-              unblur("ExDiv")
-            }
-            if(divId == document.getElementById("RefDiv")){
-              unblur("PDFDiv")
-              unblur("ExDiv")
-            }
-            if(divId == document.getElementById("ExDiv")){
-              unblur("PDFDiv")
-              unblur("RefDiv")
-            }
-          };
-
-          function moveAbove(id){
-            let elementId = document.getElementById(id);
-
-            if(elementId.classList.contains("moveAbove")){
-              elementId.classList.remove("moveAbove");
-              
-            }else{
-              elementId.classList.add("moveAbove");   
-            }
-          }
+      <script src="../generalScript.js">
       </script>
     </body>
 
