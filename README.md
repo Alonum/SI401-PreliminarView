@@ -22,7 +22,7 @@ Versão preliminar de um site para a disciplina SI401. Atividade de Fixação 20
 
 - [x] **Objetivo:** Colocar em perspectiva a programação para Web. Capacitar o aluno a compreender as principais linguagens de marcação e estilo. Capacitar o aluno a compreender e desenvolver scripts para execução em navegadores. Capacitar o aluno a compreender e desenvolver scripts para execução em servidores web.
 
-- [ ] **Tópicos:**
+- [x] **Tópicos:**
   - [x]	Introdução
     - [x]	Imagens
 	- [x]	Referências
@@ -48,7 +48,7 @@ Versão preliminar de um site para a disciplina SI401. Atividade de Fixação 20
 
 - [x] **Layout**
 
-- [ ] **Padrão W3C**
+- [x] **Padrão W3C**
 
 ## Links Úteis
 
