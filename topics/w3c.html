@@ -1,0 +1,60 @@
+<!--https://www.w3.org/WAI/
+https://www.w3.org/WAI/fundamentals/
+https://www.w3.org/TR/WCAG/
+https://webaim.org/
+https://web.dev/articles/accessibility?hl=pt-br
+https://developer.mozilla.org/en-US/docs/Web/Accessibility
+
+
+Curso
+https://www.edx.org/learn/web-accessibility/the-world-wide-web-consortium-w3c-introduction-to-web-accessibility
+Ferramenta
+https://wave.webaim.org/-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>SI401 - HTML</title>
+		<!-- Arquivo estilo css -->
+		<link rel="stylesheet" href="../mstyle.css">
+    </head>
+
+    <body class ="topicspagebackground showingUp">
+        <div id="returnButton">
+            <button onclick="window.open('../homepage.html', '_self')" style="background-color: rgba(0, 0, 0, 0.0001);border: 0px;position:fixed;left:1vw;top:1vw;"><img src="../img/SetaRetorno.png" style="width: 3vw;height:2vw;" alt = "Retornar a pagina principal"></button>
+        </div>
+
+        <div id = "pageTitle" class="pageTitle" style="right:25vw; top:3vw; font-size:4vw;text-align:center;word-spacing:1vw;letter-spacing: 2vw;">Acessibilidade<br>na Web</div>
+
+        <div id="coolRectangle" class="coolRectangle">
+        </div>
+
+        <div id="infoButtons">
+          <div id="material">  
+            <button id="openB"  onclick="transitionCat('openB')" class = "fantasticCatButton"><img src="../img/Mary.png" class="pdfButtonImage" style="animation: spinIn 2s; width:12vw; height:12vw;" alt = "Abrir Material Complementar"></button>
+            <button id="closeB" onclick="transitionCat('closeB')" class="fantasticCatButton" style="pointer-events:none"><img src="../img/Anna.png" class="pdfButtonImage" style="width:12vw; height:12vw; opacity:0;" alt = "Fechar Material Complementar"></button>
+            <div id="hiddenButtons" class="hidden-buttons">
+              <button style="left:12vw;top:13vw;" class="pdfAltButtons" onclick="openPDF('https://www.w3.org/WAI/')">WAI</button>
+              <button style="left:27vw;top:13vw;;" class="pdfAltButtons" onclick="openPDF('https://www.w3.org/WAI/fundamentals/')">WAI Overview</button>
+              <button style="left:10vw;bottom:18vw;" class="pdfAltButtons" onclick="openPDF('https://www.w3.org/TR/WCAG/')">WCAG</button>
+              <button style="left:25vw;bottom:18vw;" class="pdfAltButtons" onclick="openPDF('https://webaim.org/')">WebAIM</button>
+              <button style="right:7vw;bottom:18vw;" class="pdfAltButtons" onclick="openPDF('https://web.dev/articles/accessibility?hl=pt-br')">GoogleDev</button>
+              <button style="right:25vw;bottom:18vw;" class="pdfAltButtons" onclick="openPDF('https://developer.mozilla.org/en-US/docs/Web/Accessibility')">MozillaDev</button>
+              <button style="right:10vw;top:13vw;" class="pdfAltButtons" onclick="openPDF('https://www.edx.org/learn/web-accessibility/the-world-wide-web-consortium-w3c-introduction-to-web-accessibility')">Curso</button>
+              <button style="right:25vw;top:13vw;;" class="pdfAltButtons" onclick="openPDF('https://wave.webaim.org/')">Ferramenta Wave</button>
+
+              <div class="pageTitle" style="right:5vw; bottom:12vw; font-size:4vw;text-align:center;word-spacing:1vw;letter-spacing: 2vw;">Conteudo Complementar</div>
+            </div>
+          </div>
+        </div>
+
+      <!--Arquivo de métodos JavaScript-->
+      <script src="../generalScript.js">
+      </script>
+    </body>
+
+
+</html>

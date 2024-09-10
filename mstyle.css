@@ -135,12 +135,15 @@ a:hover
 {
     background-image: url('img/homepage.gif');
     background-size: cover;
-    background-color:black
+    background-color:black;
+    background-repeat: no-repeat;
 }
 
 .topicspagebackground{
     background-image: url('img/topicspage.gif');
     background-size:cover;
+    background-color:black;
+    background-repeat: no-repeat;
 }
 
 .pageimages
@@ -161,6 +164,16 @@ a:hover
 .hidden-buttons {
     display: none;
     margin-top: 10px;
+}
+
+.fantasticCatButton{
+    position: fixed;
+    left: 42vw;
+    top: 18vw;
+    background-color: rgba(0, 0, 0, 0.0001);   
+    border: 0px;
+    filter: drop-shadow(rgb(255, 255, 255) 0vw -2vw 3vw);
+
 }
 
 .pdfMainButton{
@@ -266,4 +279,14 @@ a:hover
     left:0vw;
     opacity: 0.3;
     filter:blur(1vw);
+}
+
+@keyframes spinIn{
+    0%{opacity:0;}
+    100%{opacity:100;transform: rotate(360deg);}
+}
+
+@keyframes spinOut{
+    0%{opacity:100;}
+    100%{opacity:0;transform: rotate(-360deg);}
 }

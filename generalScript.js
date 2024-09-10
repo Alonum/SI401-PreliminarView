@@ -80,3 +80,47 @@ function openPDF(string){
       elementId.classList.add("moveAbove");   
     }
   }
+
+
+
+  function transitionCat(buttonsId){
+    var hiddenButtonsId = document.getElementById("hiddenButtons");
+    var expandButtonsId = document.getElementById(buttonsId)
+    console.log(expandButtonsId);
+    console.log(expandButtonsId.parentElement.id)
+    var imgElement = expandButtonsId.querySelector('img');
+    
+    if (hiddenButtonsId.style.display === "none" || hiddenButtonsId.style.display === "") {
+        spinOut("openB")
+        spinIn("closeB")
+        hiddenButtonsId.style.display = "block";
+        imgElement.alt = "Fechar";
+        blurOthers(expandButtonsId.parentElement.id);
+    } else {
+        hiddenButtonsId.style.display = "none";
+        spinOut("closeB")
+        spinIn("openB")
+        imgElement.alt = "Expandir";
+        unblurOthers(expandButtonsId.parentElement.id);
+    }
+}
+function spinIn(buttonElementId){
+    let buttonElement = document.getElementById(buttonElementId)
+    let imgElement = buttonElement.querySelector('img')
+    imgElement.style.removeProperty("animation")
+    imgElement.style.animation = "spinIn 2s"
+    imgElement.style.opacity = "100"
+    buttonElement.style.pointerEvents = "auto";
+    imgElement.style.transition = "2s ease"
+
+}
+function spinOut(buttonElementId){
+    let buttonElement = document.getElementById(buttonElementId)
+    let imgElement = buttonElement.querySelector('img')
+    imgElement.style.removeProperty("animation")
+    imgElement.style.animation = "spinOut 2s"
+    imgElement.style.opacity = "0"
+    buttonElement.style.pointerEvents = "none";
+    imgElement.style.transition = "2s ease"
+
+}
