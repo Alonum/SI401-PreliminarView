@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>SI401 - BACK-PHP-AJAX</title>
+		<!-- Arquivo estilo css -->
+		<link rel="stylesheet" href="../mstyle.css">
+    </head>
+
+    <body class ="topicspagebackground showingUp">
+        <div id="returnButton">
+            <button onclick="window.open('../homepage.html', '_self')" style="background-color: rgba(0, 0, 0, 0.0001);border: 0px;position:fixed;left:1vw;top:1vw;"><img src="../img/SetaRetorno.png" style="width: 3vw;height:2vw;" alt = "Retornar a pagina principal"></button>
+        </div>
+
+        <div id = "pageTitle" class="pageTitle" style="right:20vw; top:1vw; font-size:5.2vw; text-align: center; word-spacing:0.1vw;letter-spacing: 3vw;">BACK<br>PHP & AJAX</div>
+
+        <div id="coolRectangle" class="coolRectangle">
+        </div>
+
+        <div id="infoButtons">
+          <div id="PDFDiv">  
+            <button onclick="expandButton('../img/PDF_Button.png','../img/PDF_ButtonClose.png','hiddenPdfButtons','expandPdfButton')" class = "pdfMainButton" id="expandPdfButton"><img src="../img/PDF_Button.png" class="pdfButtonImage" alt = "Abrir PDFs"></button>
+
+            <div id="hiddenPdfButtons" class="hidden-buttons">
+              <button style="left:30vw;top:7vw;transform: rotate(30deg);" class="pdfAltButtons" onclick="openPDF('../pdf/Unidade13_PHP.pdf')">Unidade 13</button>
+              <button style="left:25vw;bottom:23.5vw;" class="pdfAltButtons" onclick="openPDF('../pdf/Unidade14_PHP.pdf')">Unidade 14</button>
+              <button style="left:30vw;bottom:14vw;transform: rotate(-30deg);" class="pdfAltButtons" onclick="openPDF('../pdf/Unidade15_PHP.pdf')">Unidade 15</button>
+              <button style="right:35vw;top:7vw;transform: rotate(-30deg);" class="pdfAltButtons" onclick="openPDF('../pdf/Unidade16_PHP.pdf')">Unidade 16</button>
+              <button style="right:30vw;bottom:23.5vw;" class="pdfAltButtons" onclick="openPDF('../pdf/Unidade17_PHP.pdf')">Unidade 17</button>
+              <button style="right:35vw;bottom:14vw;transform: rotate(30deg);" class="pdfAltButtons" onclick="openPDF('../pdf/Unidade18_PHP.pdf')">Unidade 18</button>
+              <button style="right:46vw;bottom:5vw;" class="pdfAltButtons" onclick="openPDF('../pdf/Unidade19_AJAX.pdf')">Unidade 19</button>
+            </div>
+          </div>
+
+          <div id="RefDiv">  
+            <button onclick="expandButton('../img/Referencias.png','../img/ReferenciasHover.png','hiddenReferenceButtons','expandReferenceButton')"  class = "referenceMainButton" id="expandReferenceButton"><img src="../img/Referencias.png"  class="pdfButtonImage" alt = "Abrir Referencias"></button>
+
+            <div id="hiddenReferenceButtons"  class="hidden-buttons">
+              <button style="left:2vw;top:13vw;transform: rotate(30deg);" class="pdfAltButtons" onclick="window.open('http://w3schools.com/html/default.asp', '_blank')">W3Schools</button>
+              <button style="left:0.5vw;bottom:15vw;transform: rotate(30deg);" class="pdfAltButtons" onclick="window.open('http://www.w3.org/TR/html4/', '_blank')">W3C Specification</button>
+              <button style="right:60vw;top:12vw;transform: rotate(-30deg);" class="pdfAltButtons" onclick="window.open('https://validator.w3.org/', '_blank')">W3C Validation</button>
+              <button style="right:60vw;bottom:15vw;transform: rotate(-30deg);" class="pdfAltButtons" onclick="window.open('https://html.spec.whatwg.org/', '_blank')">WHTWMG Standard</button>
+            </div>
+          </div>
+
+          <div id="ExDiv">  
+            <button onclick="moveAbove('expandExButton');expandButton('../img/Exercicios.png','../img/ExerciciosHover.png','hiddenExButtons','expandExButton');" class = "exMainButton" id="expandExButton"><img src="../img/Exercicios.png" class="pdfButtonImage" alt = "Abrir Exercicios"></button>
+
+            <div id="hiddenExButtons" class="hidden-buttons">
+              <a style="right:42.5vw;top:20vw;" class="exAltButtons" href="exercicios/Exemplo01-back-AJAX.zip" download = "Exercicio 1">Exemplo 1 - AJAX</a>
+            </div>
+          </div>
+        </div>
+
+        
+
+
+      <!--Arquivo de métodos JavaScript-->
+      <script src="../generalScript.js">
+      </script>
+    </body>
+
+
+</html>
