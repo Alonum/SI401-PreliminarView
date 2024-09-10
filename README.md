@@ -24,25 +24,25 @@ Versão preliminar de um site para a disciplina SI401. Atividade de Fixação 20
 
 - [ ] **Tópicos:**
   - [x]	Introdução
-    - [ ]	Imagens
-	- [ ]	Referências
-	- [ ]	Materiais Externos
+    - [x]	Imagens
+	- [x]	Referências
+	- [x]	Materiais Externos
   - [x]	HTML
     - [x]	Imagens
 	- [x]	Referências
 	- [x]	Materiais Externos
   - [x]	CSS
-    - [ ]	Imagens
-	- [ ]	Referências
-	- [ ]	Materiais Externos
+    - [x]	Imagens
+	- [x]	Referências
+	- [x]	Materiais Externos
   - [x]	Front-End com JavaScript
-    - [ ]	Imagens
-	- [ ]	Referências
-	- [ ]	Materiais Externos
+    - [x]	Imagens
+	- [x]	Referências
+	- [x]	Materiais Externos
   - [x]	Back-End com PHP e AJAX
-    - [ ]	Imagens
-	- [ ]	Referências
-	- [ ]	Materiais Externos
+    - [x]	Imagens
+	- [x]	Referências
+	- [x]	Materiais Externos
   - [x]	Tópico Complementar: Acessibilidade na Web
 	- [x]	Materiais Externos
 
